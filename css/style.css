@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
 :root {
   --primary: #006aff;
+  --primaryDark: #1633ff;
 
-  --primaryFont: #031b4e;
+  /* --primaryFont: #031b4e; */
+  --primaryFont: #333;
   --secondaryFont: #5b6987;
 
   --white: #fff;
@@ -87,6 +90,7 @@ img {
   height: 400px;
   background-color: var(--primary);
   color: var(--white);
+  position: relative;
 }
 
 .showcase h1 {
@@ -95,11 +99,60 @@ img {
 
 .showcase p {
   margin: 20px 0;
+  font-weight: 300;
+  color: var(--white);
 }
 
 .showcase .grid {
-  grid-template-columns: 55% 45%;
+  overflow: visible;
+  grid-template-columns: 55% auto;
   gap: 30px;
+}
+
+.showcase .btn-outline {
+  font-size: 0.9rem;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  min-height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 1rem;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.showcase::before,
+.showcase::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
 }
 
 /** Utilities */
@@ -108,6 +161,46 @@ img {
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px;
+}
+
+.card {
+  color: var(--primaryFont);
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary);
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: ou 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+.btn:hover {
+  /* transform: scale(0.98); */
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  /* transform: scale(0.98); */
+  background: var(--primaryDark);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .flex {
