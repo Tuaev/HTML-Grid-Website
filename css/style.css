@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+:root {
+  --primary: #006aff;
+
+  --primaryFont: #031b4e;
+  --secondaryFont: #5b6987;
+
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Nato', sans-serif;
+  color: var(--primaryFont);
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primaryFont);
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+  color: var(--secondaryFont);
+}
+
+img {
+  width: 100%;
+}
+
+.white {
+  color: var(--white);
+}
+
+.darkblue {
+  color: var(--primaryFont);
+}
+
+.darkgrey {
+  color: var(--secondaryFont);
+}
+
+.navbar {
+  background-color: #047aed;
+  color: var(--white);
+  height: 70px;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
