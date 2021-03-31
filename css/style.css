@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
   --primary: #006aff;
@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: var(--primaryFont);
   line-height: 1.6;
 }
@@ -161,15 +161,33 @@ img {
 }
 
 .stats-heading {
-  max-width: 500px;
+  max-width: 700px;
   margin: auto;
+}
+.stats h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.stats h4 {
+  font-size: 1.125rem;
 }
 
 .stats .grid h3 {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 .stats .grid p {
   font-size: 1.125rem;
   color: var(--primaryFont);
+}
+
+/** CLI */
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
 }
