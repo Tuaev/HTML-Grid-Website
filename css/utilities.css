@@ -71,6 +71,15 @@
   color: #333;
 }
 
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark {
+  color: var(--white);
+}
+
 /** Text Sizes */
 .lead {
   font-size: 20px;
@@ -158,41 +167,41 @@ my-2 {
 
 /** Padding */
 .p-1 {
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 .p-2 {
-  margin: 1.5rem 0;
+  padding: 1.5rem 0;
 }
 
 .p-3 {
-  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
 .p-4 {
-  margin: 3rem 0;
+  padding: 3rem 0;
 }
 
 .p-5 {
-  margin: 4rem 0;
+  padding: 4rem 0;
 }
 
 .py-1 {
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 .py-2 {
-  margin: 1.5rem 0;
+  padding: 1.5rem 0;
 }
 
 .py-3 {
-  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
 .py-4 {
-  margin: 3rem 0;
+  padding: 3rem 0;
 }
 
 .py-5 {
-  margin: 4rem 0;
+  padding: 4rem 0;
 }
