@@ -39,6 +39,11 @@
   transition: all 0.3s ease;
 }
 
+.btn-outline:hover {
+  background-color: var(--primaryDark);
+  border: 1px #fff solid;
+}
+
 .btn-primary:hover {
   /* transform: scale(0.98); */
   background: var(--primaryDark);
